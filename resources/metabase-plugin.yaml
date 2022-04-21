@@ -26,12 +26,13 @@ driver:
         - default: default
     - name: protocol
       display-name: Protocol ( bolt / bolt+s / bolt+ssc / neo4j / neo4j+s / neo4j+ssc )
-      default: bolt
+      default: neo4j+s
+    - advanced-options-start
     - merge:
         - additional-options
         - name: jdbc-flags
           display-name: JDBC connection options for Neo4j connection
-          placeholder: "?&LogLevel=6;StrictlyUseBoltScheme=false"
+          placeholder: "?&LogLevel=6;StrictlyUseBoltScheme=true"
   connection-properties-include-tunnel-config: false
 init:
   - step: load-namespace
