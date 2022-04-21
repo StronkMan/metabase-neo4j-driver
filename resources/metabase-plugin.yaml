@@ -32,7 +32,7 @@ driver:
         - additional-options
         - name: jdbc-flags
           display-name: JDBC connection options for Neo4j connection
-          placeholder: "?&LogLevel=6;StrictlyUseBoltScheme=true"
+          placeholder: "?SSL=true&LogLevel=6&StrictlyUseBoltScheme=false"
   connection-properties-include-tunnel-config: false
 init:
   - step: load-namespace
