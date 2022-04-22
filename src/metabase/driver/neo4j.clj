@@ -32,7 +32,7 @@
     :or   {host "localhost", port 7687, db "neo4j", jdbc-flags ""}
     :as   opts}]
   (merge
-   {:classname   "com.simba.neo4j.jdbc42.Driver"
+   {:classname   "com.simba.neo4j.jdbc.Driver"
     :subprotocol "neo4j"
     :subname     (make-subname host port db jdbc-flags)}
    (dissoc opts :host :port :db jdbc-flags)))

@@ -38,4 +38,4 @@ init:
   - step: load-namespace
     namespace: metabase.driver.neo4j
   - step: register-jdbc-driver
-    class: com.simba.neo4j.jdbc42.Driver
+    class: com.simba.neo4j.jdbc.Driver
